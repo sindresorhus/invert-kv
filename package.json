@@ -1,6 +1,6 @@
 {
 	"name": "invert-kv",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"description": "Invert the key/value of an object. Example: `{foo: 'bar'}` → `{bar: 'foo'}`",
 	"license": "MIT",
 	"repository": "sindresorhus/invert-kv",
