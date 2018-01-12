@@ -1,10 +1,9 @@
-'use strict';
-var assert = require('assert');
-var invertKv = require('./');
+import test from 'ava';
+import m from '.';
 
-it('should invert key/val of an object', function () {
-	assert.deepEqual(
-		invertKv({foo: 'bar', unicorn: 'rainbow'}),
+test(t => {
+	t.deepEqual(
+		m({foo: 'bar', unicorn: 'rainbow'}),
 		{bar: 'foo', rainbow: 'unicorn'}
 	);
 });
