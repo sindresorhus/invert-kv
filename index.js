@@ -4,12 +4,16 @@ module.exports = object => {
 		throw new TypeError('Expected an object');
 	}
 
-	const ret = {};
+	const result = {};
 
-	for (const key of Object.keys(object)) {
-		const value = object[key];
-		ret[value] = key;
+	for (const [key, value] of Object.entries(object)) {
+		result[value] = key;
 	}
 
-	return ret;
+	for (const symbol of Object.getOwnPropertySymbols(object)) {
+		const value = object[symbol];
+		result[value] = symbol;
+	}
+
+	return result;
 };
