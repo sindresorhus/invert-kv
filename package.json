@@ -23,8 +23,9 @@
 		"object",
 		"key",
 		"value",
-		"kv",
-		"invert"
+		"invert",
+		"keys",
+		"values"
 	],
 	"devDependencies": {
 		"ava": "^1.4.1",

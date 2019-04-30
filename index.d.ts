@@ -1,3 +1,5 @@
+// TODO: Extend this to symbol when TS allows symbols in index signatures:
+// https://github.com/Microsoft/TypeScript/issues/1863
 /**
 Invert the key/value of an object. Example: `{foo: 'bar'}` → `{bar: 'foo'}`.
 
@@ -9,7 +11,6 @@ invertKeyValue({foo: 'bar', '🦄': '🌈'});
 //=> {bar: 'foo', '🌈': '🦄'}
 ```
 */
-// TODO: extend this to symbol when TS allows symbols in index signatures
 declare function invertKeyValue<
 	KeyType extends string | number,
 	ValueType extends string | number | symbol
