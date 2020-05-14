@@ -2,10 +2,10 @@ import test from 'ava';
 import invertKeyValue from '.';
 
 test('throws an error if wrong type is given', t => {
-	const error = t.throws(() => {
-		invertKeyValue(null);
-	}, {instanceOf: TypeError});
-	t.is(error.message, 'Expected an object');
+	t.throws(
+		() => invertKeyValue(null),
+		{instanceOf: TypeError, message: 'Expected an object'}
+	);
 });
 
 test('inverts string/number properties', t => {
