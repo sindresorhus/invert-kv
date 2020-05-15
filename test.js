@@ -3,8 +3,13 @@ import invertKeyValue from '.';
 
 test('throws an error if wrong type is given', t => {
 	t.throws(
-		() => invertKeyValue(null),
-		{instanceOf: TypeError, message: 'Expected an object'}
+		() => {
+			invertKeyValue(null);
+		},
+		{
+			instanceOf: TypeError,
+			message: 'Expected an object'
+		}
 	);
 });
 
