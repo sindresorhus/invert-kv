@@ -1,4 +1,5 @@
 'use strict';
+
 module.exports = object => {
 	if (typeof object !== 'object' || object === null) {
 		throw new TypeError('Expected an object');

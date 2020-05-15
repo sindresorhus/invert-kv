@@ -1,14 +1,12 @@
-# invert-kv [![Build Status](https://travis-ci.org/sindresorhus/invert-kv.svg?branch=master)](https://travis-ci.org/sindresorhus/invert-kv)
+# invert-kv [![Build Status](https://travis-ci.com/sindresorhus/invert-kv.svg?branch=master)](https://travis-ci.com/sindresorhus/invert-kv)
 
 > Invert the key/value of an object. Example: `{foo: 'bar'}` → `{bar: 'foo'}`
-
 
 ## Install
 
 ```
 $ npm install invert-kv
 ```
-
 
 ## Usage
 
@@ -18,7 +16,6 @@ const invertKeyValue = require('invert-kv');
 invertKeyValue({foo: 'bar', '🦄': '🌈'});
 //=> {bar: 'foo', '🌈': '🦄'}
 ```
-
 
 ---
 
