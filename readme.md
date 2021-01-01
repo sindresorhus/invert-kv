@@ -1,4 +1,4 @@
-# invert-kv [![Build Status](https://travis-ci.com/sindresorhus/invert-kv.svg?branch=master)](https://travis-ci.com/sindresorhus/invert-kv)
+# invert-kv
 
 > Invert the key/value of an object. Example: `{foo: 'bar'}` → `{bar: 'foo'}`
 
