@@ -11,7 +11,7 @@ $ npm install invert-kv
 ## Usage
 
 ```js
-const invertKeyValue = require('invert-kv');
+import invertKeyValue from 'invert-kv';
 
 invertKeyValue({foo: 'bar', '🦄': '🌈'});
 //=> {bar: 'foo', '🌈': '🦄'}

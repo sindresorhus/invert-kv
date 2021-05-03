@@ -1,6 +1,6 @@
-import {expectType} from 'tsd';
-import invertKeyValue = require('.');
+import {expectType, expectAssignable} from 'tsd';
+import invertKeyValue from './index.js';
 
-expectType<{[key: string]: string}>(invertKeyValue({foo: 'bar', '🦄': '🌈'}));
-expectType<{[key: number]: string}>(invertKeyValue({foo: 1}));
-expectType<{[key: number]: string}>(invertKeyValue({1: 1}));
+expectAssignable<Record<string, string>>(invertKeyValue({foo: 'bar', '🦄': '🌈'}));
+expectAssignable<Record<number, string>>(invertKeyValue({foo: 1}));
+expectType<Record<number, string>>(invertKeyValue({1: 1}));

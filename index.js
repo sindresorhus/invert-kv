@@ -1,6 +1,4 @@
-'use strict';
-
-module.exports = object => {
+export default function invertKeyValue(object) {
 	if (typeof object !== 'object' || object === null) {
 		throw new TypeError('Expected an object');
 	}
@@ -17,4 +15,4 @@ module.exports = object => {
 	}
 
 	return result;
-};
+}

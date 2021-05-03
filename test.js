@@ -1,5 +1,5 @@
 import test from 'ava';
-import invertKeyValue from '.';
+import invertKeyValue from './index.js';
 
 test('throws an error if wrong type is given', t => {
 	t.throws(
