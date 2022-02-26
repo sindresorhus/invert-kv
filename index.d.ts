@@ -10,8 +10,7 @@ invertKeyValue({foo: 'bar', '🦄': '🌈'});
 ```
 */
 export default function invertKeyValue<
-	KeyType extends PropertyKey,
-	ValueType extends PropertyKey
+	T extends Record<PropertyKey, PropertyKey>
 >(
-	object: {[key in KeyType]: ValueType}
-): {[key in ValueType]: KeyType extends number ? Exclude<KeyType, number> | string : KeyType};
+	object: T
+): {[P in keyof T as T[P]]: keyof T extends number ? Exclude<keyof T, number> | string : P};
